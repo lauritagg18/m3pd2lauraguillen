@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Barlow', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%; 
+	background-color: #9ADCFF
+	 
+}
+.grid_container{
+	display: grid;
+	gap: 5px;
+	grid-template: 
+	"header" 30px
+	"experiencia" auto
+	"portfolio" auto
+	"footer" 50px
+	;
+}
+
+.header{
+	grid-area: header;
+	background-color: #9ADCFF;
+	margin: 5px;
+}
+ 
+.experiencia{
+	grid-area: experiencia;
+	background-color: #FFF89A;
+	margin-left: 5px;margin-right: 5px;margin-top: 5px;;
+}
+
+.portfolio{
+	grid-area: portfolio;
+	background-color: #FFF89A;
+	margin-left: 5px;margin-right: 5px;margin-top: 5px;
+	text-align: center
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #FFB2A6;
+	text-align: center;
+}
+
+.sizeima {width: 99%;border-color: #FFB2A6;border-style:solid;border-width: 5px}
+section {display: flex; flex-flow: wrap;margin: 1%}
+.info {margin-left: 10%;margin-right: 10%}
+.exp {display: flex;flex-flow: wrap}
+.cir{width: 50%;}
+.redes{width: 15%;}
+.redes img{width: 50%}
+h1{color:#FF8AAE;text-align: center;}
+.rosa{background-color:#FF8AAE}
+.lrosa{color:#FF8AAE}
+.lrosaa{margin-top: -1.7%;color:#FF8AAE}
+h2{text-align:center;}
+.logoup{width: 1.7%;padding-top: 0.3%;}
+svg{flex-flow: wrap;width: 10%;}
+.gal{width: 90%;}
+.gale{width: 95%;}
+.portfolio iframe{border-radius:20%}
+.tam {margin-left: 33%;width: 60%;}
+.portfolio img, .experiencia img{ transition: 1s;}
+.portfolio img:hover, .experiencia img:hover{filter: grayscale(100%);transform: scale(1.1);}
+.marfo{margin-left: 3%;margin-top: 1%;border-radius:20%}
+.mar{margin-left: 6%;margin-top: 1%;border-radius:20%}
+.ico {margin:1%;width: 98%;}
+.icodos {margin:1%;width: 60%;margin-left: 20%}
+.ma{margin-left: 10%;}
+.letras{width: 10%}
+.color1{width: 90%;margin-left: 10%;margin-right: 10%;color: #ffffff;background-color: #000000;padding: 1%;padding-bottom: 50%;padding-top: 50%}
+.color2{width: 90%;margin-left: 10%;margin-right: 10%;background-color: #FF8AAE;padding: 1%;padding-bottom: 50%;padding-top: 50%}
+.color3{width: 90%;margin-left: 10%;margin-right: 10%;background-color: #FFB2A6;padding: 1%;padding-bottom: 50%;padding-top: 50%}
+.color4{width: 90%;margin-left: 10%;margin-right: 10%;background-color: #9ADCF;padding: 1%;padding-bottom: 50%;padding-top: 50%}
+.color5{width: 90%;margin-left: 10%;margin-right: 10%;background-color: #FFF89A;padding: 1%;padding-bottom: 50%;padding-top: 50%}
+.sizeiman {width: 80%;border-color: #FFB2A6;border-style:solid;border-width: 5px;margin: 10%;border-radius:0px}
+.sizeimanmo {width: 20%;border-color: #FFB2A6;border-style:solid;border-width: 5px;margin:5%;border-radius:0px}
+iframe{width: 20%;height: 97%;}
+
+@media (min-width:50px) {
+	.grid_container{
+		grid-template: 
+		"header      header             header " 	    auto 
+		"experiencia experiencia        experiencia" 	auto
+		"portfolio   portfolio          portfolio"      auto
+		"footer     footer              footer"         auto /
+		 200px 		500px               auto;
+ 	}
+	.icodos{display: block}
+	.ico{display: none}
+	div{width: 100%;}
+	h1{font-size:400% }
+	h3,a,p,li{font-size: 200%;}
+    h2{font-size: 230%;}
+	b{font-size: 105%;}
+	a{font-size: 170%;}
+	.mar{width: 80%}
+	.marfo{width: 80%;}
+@media (min-width: 768px) {
+	.grid_container{
+		grid-template: 
+		"header        experiencia      experiencia"    auto 
+		"portfolio     portfolio        portfolio" 	    auto
+		"footer 	   footer 	        footer" 	    auto /
+		 300px 		   auto            auto;
+	}
+ h1{font-size:170% }
+	.icodos{display: none}
+	.ico{display: block}
+	div{width: 50%;}
+	h3,p,li{font-size: 70%;}
+    h2{font-size: 88%;}
+	b{font-size: 100%;}
+	a{font-size: 70%;}
+	.mar{width: 40%}
+	.marfo{width: 20%;}
+	
+@media (min-width: 900px) {
+	.grid_container{
+		grid-template: 
+		"header 	experiencia    portfolio      portfolio " 	    auto 
+		"header     experiencia    portfolio      portfolio " 	    auto
+		"header     experiencia    portfolio      portfolio " 	    auto
+		"footer 	footer         footer	      footer" 	        70px /
+		 170px   	350px          500px           auto;
+	}
+	h1{font-size: 100%}
+	.icodos{display: none}
+	.ico{display: block}
+	div{width: 50%;}
+	h3,p,li{font-size: 70%;}
+    h2{font-size: 88%;} 
+	b{font-size: 100%;}
+	a{font-size: 70%;}
+	.mar{width: 40%}
+	.marfo{width: 20%;}
+}
+
+@media (min-width: 1200px) {
+	.grid_container{
+		grid-template: 
+		"header 	experiencia    portfolio      portfolio " 	    auto 
+		"header     experiencia    portfolio      portfolio " 	    auto
+		"header     experiencia    portfolio      portfolio " 	    auto
+		"footer 	footer         footer	      footer" 	        40px /
+		 300px   	500px          500px           auto;
+	}
+h1{font-size: 180%}
+.icodos{display: none}
+div{width: 50%;}
+h3,p,li{font-size: 70%;}
+h2{font-size: 88%;}
+b{font-size: 90%;}
+a{font-size: 70%;}
+.mar{width: 40%}
+.marfo{width: 20%;}
+
+}
